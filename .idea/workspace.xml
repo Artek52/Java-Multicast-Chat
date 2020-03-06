@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c0844cc-88d9-4da1-84bc-2ee06d65993c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UDPchat/udpclient/DatagramClient$incomingMessages.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UDPchat/udpclient/DatagramClient$incomingMessages.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/UDPchat/udpclient/DatagramClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/UDPchat/udpclient/DatagramClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/udpchatroom/DatagramServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/udpchatroom/DatagramServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/udpclient/DatagramClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/udpclient/DatagramClient.java" afterDir="false" />
-    </list>
+    <list default="true" id="6c0844cc-88d9-4da1-84bc-2ee06d65993c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,7 +95,19 @@
       <option name="presentableId" value="Default" />
       <updated>1582544913743</updated>
     </task>
+    <task id="LOCAL-00001" summary="clients now have a user-specified username that gets printed with the message they sent">
+      <created>1583504430838</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583504430838</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="clients now have a user-specified username that gets printed with the message they sent" />
+    <option name="LAST_COMMIT_MESSAGE" value="clients now have a user-specified username that gets printed with the message they sent" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1374" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583249665116">
@@ -113,10 +118,10 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1725" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1040@0.0.2560.1040" timestamp="1583265726267" />
-    <state x="934" y="114" key="CommitChangelistDialog2" timestamp="1583504389119">
+    <state x="934" y="114" key="CommitChangelistDialog2" timestamp="1583504428857">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
-    <state x="934" y="114" key="CommitChangelistDialog2/0.0.2560.1040@0.0.2560.1040" timestamp="1583504389119" />
+    <state x="934" y="114" key="CommitChangelistDialog2/0.0.2560.1040@0.0.2560.1040" timestamp="1583504428857" />
     <state x="1700" y="275" key="FileChooserDialogImpl" timestamp="1583181519339">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
