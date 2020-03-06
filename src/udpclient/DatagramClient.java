@@ -10,6 +10,7 @@ public class DatagramClient{
     private InetAddress address;
     private Scanner scanner;
     private String msg;
+    private String username;
 
     public DatagramClient() throws IOException {
         multicastSocket = new MulticastSocket(12345);
@@ -20,19 +21,24 @@ public class DatagramClient{
         incomingMessagesThread.start();
     }
 
+    void setUsername(){
+        System.out.println("Inserire username");
+        username =  scanner.nextLine();
+    }
+
     void outgoingMessages() throws IOException {
         while (true) {
             msg = scanner.nextLine();
-            //Write
+            msg = username +"/"+msg;
             DatagramPacket datagramPacketOut = new DatagramPacket(msg.getBytes(), msg.getBytes().length, address, 5000);
             multicastSocket.send(datagramPacketOut);
         }
     }
 
     public static void main(String[] args) throws IOException {
-
-        new DatagramClient().outgoingMessages();
-
+        DatagramClient datagramClient = new DatagramClient();
+        datagramClient.setUsername();
+        datagramClient.outgoingMessages();
     }
 
     public class incomingMessages implements Runnable{

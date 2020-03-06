@@ -11,6 +11,9 @@ public class DatagramServer implements Runnable{
     private String data;
     private InetAddress group;
     private DatagramPacket datagramPacketOut;
+    private String username;
+    private String message;
+    private String[] parts;
 
     public DatagramServer() throws IOException {
         multicastSocket = new MulticastSocket(5000);
@@ -31,6 +34,9 @@ public class DatagramServer implements Runnable{
                 //read
                 multicastSocket.receive(datagramPacketIn);
                 data = new String(datagramPacketIn.getData(),0,datagramPacketIn.getLength()).trim();
+                parts = data.split("/");
+                username = parts[0];
+                message = parts[1];
                 System.out.println(data);
                 //write
                 datagramPacketOut = new DatagramPacket(data.getBytes(), data.getBytes().length , group , datagramPacketIn.getPort());
